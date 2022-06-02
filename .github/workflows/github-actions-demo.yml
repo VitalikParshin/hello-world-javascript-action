@@ -7,7 +7,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-
+      - uses: actions/checkout
       - name: Send slack message
         id: hello
         uses: ./actions/slack-actions
