@@ -10,7 +10,7 @@ jobs:
 
       - name: Send slack message
         id: hello
-        uses: ./.github/actions/slack-actions
+        uses: ./actions/slack-actions
         with:
           who-to-greet: "Vitalii Parshyn"
 
