@@ -6,13 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@master
-      
+
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
       - name: Send slack message
         id: hello
-        uses: ./actions/slack-actions
+        uses: ./.github/actions/slack-actions
         with:
           who-to-greet: "Vitalii Parshyn"
 
